@@ -7,26 +7,23 @@
 // Type your solution immediately below this line:
 
 
-class Playlist {
-  Constructor (title){
-  this.title =title
-  this.songs = []
-}
-  addSong(songs){
-    this.songs.push(songs)
-    console.log(this.songs)
+class Playlist{
+  constructor(title, song ){
+    this.title = title
+    this.songs = []
   }
+addSong(song){
+  this.songs.push(song)
+}
+}
 
 // #2: Create an instance of the Playlist class and set it to a variable called `myPlaylist`
 // Call the instance's `addSong` method to add a song to the instance's `songs` array
 // Type your solution immediately below this line:
-class myPlaylist extends Playlist
-  constructor (title){
-  super(title, songs)
-  this.songs = []
-    }
-  }
-}
+var myPlaylist = new Playlist("Ambers Playlist")
+
+myPlaylist.addSong("through the fire")
+
 // NOTE: THE CODE BELOW IS FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
 if(typeof Playlist !== 'undefined') {
   module.exports = {
